@@ -5,9 +5,9 @@ class App extends Component {
     super(props);
     this.state = {
       person: {
-        fullName: "John Doe",
-        bio: "A passionate software engineer.",
-        imgSrc: "https://via.placeholder.com/150",
+        fullName: "Folastar Waheed",
+        bio: "A passionate software engineer with passion for sports.",
+        imgSrc: "https://images.pexels.com/photos/1583582/pexels-photo-1583582.jpeg?auto=compress&cs=tinysrgb&w=600",
         profession: "Software Engineer",
       },
       shows: false,
@@ -42,8 +42,8 @@ class App extends Component {
 
     return (
       <div style={{ textAlign: "center", marginTop: "20px" }}>
-        <button onClick={this.toggleShow}>
-          {shows ? "Hide Profile" : "Show Profile"}
+        <button style={{padding:"10px", color:"white", background:"green"}} onClick={this.toggleShow}>
+          {shows ? "Hide Profile" : "Show Profile" }
         </button>
         {shows && (
           <div style={{ marginTop: "20px" }}>
